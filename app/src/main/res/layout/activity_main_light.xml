@@ -18,10 +18,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/flash_light"
         android:src="@drawable/buttonoff"
-        android:padding="1dp"
         android:background="@android:color/transparent"
-        android:contentDescription="@null"
-        android:layout_marginTop="190dp"
-        android:layout_marginLeft="90dp"
-        android:layout_weight="0.13" />
+        android:contentDescription="dede"
+        android:layout_marginTop="180dp"
+        android:layout_gravity="center" />
 </LinearLayout>
