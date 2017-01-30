@@ -6,15 +6,9 @@ import android.os.Bundle;
 import android.widget.ImageButton;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
-import android.hardware.Camera;
 import android.hardware.Camera.Parameters;
-import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class MainLightActivity extends AppCompatActivity {
