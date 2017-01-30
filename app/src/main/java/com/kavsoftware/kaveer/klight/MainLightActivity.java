@@ -79,6 +79,34 @@ public class MainLightActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+        if(this.camera != null){
+            this.camera.release();
+            this.camera = null;
+        }
+    }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        turnOffTheFlash();
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if(deviceHasFlash){
+            turnOffTheFlash();
+        }
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        getCamera();
+    }
+
+
     private void getCamera() {
         if (camera == null) {
             try {
